@@ -2,27 +2,30 @@
 <html lang="ru">
 <head>
     <link rel="stylesheet" href="authorizationStyle.css">
+    <script src="UserDataCollectionScript.js"></script>
     <meta charset="UTF-8">
     <title>Phone book authorization</title>
 </head>
 <body>
-    <div class="authForm">
-        <p class="authorization">Авторизация</p>
+    <form action="/" method="POST" id="form">
+        <div class="authForm">
+            <p class="authorization">Авторизация</p>
 
-        <p>Логин:</p>
-        <label for="login"></label>
-        <input type="text" id="login" name="login" placeholder="Login">
+            <p>Логин:</p>
+            <label for="login"></label>
+            <input type="text" id="login" name="login" placeholder="Login">
 
-        <p>Пароль:</p>
-        <label for="password"></label>
-        <input type="password" id="password" name="password" placeholder="Password">
+            <p>Пароль:</p>
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Password">
 
-        <br>
-        <br>
-        <button name="login">Вход</button>
-        <button name="registration">Регистрация</button>
-        <br>
-        <br>
-    </div>
+            <br>
+            <br>
+            <button type="submit" name="login">Вход</button>
+            <button type="submit" name="registration">Регистрация</button>
+            <br>
+            <br>
+        </div>
+    </form>
 </body>
 </html>
